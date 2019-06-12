@@ -1,0 +1,333 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:700);
+::-webkit-scrollbar { width: 10px; }
+
+::-webkit-scrollbar-track {
+    background: #dcdcdc;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #8aa4b2;
+}
+
+*, :after, :before {
+    box-sizing : border-box;
+}
+
+body {
+    margin      : 0;
+    font-family : 'Lato', sans-serif;
+    text-align  : center;
+    color       : #999;
+}
+
+.cbutton {
+    display          : inline-block;
+    padding          : 0.7em 1.4em;
+    margin           : 0 0.3em 0.3em 0;
+    border-radius    : 0.15em;
+    box-sizing       : border-box;
+    text-decoration  : none;
+    font-family      : 'Roboto', sans-serif;
+    font-size        : 13px;
+    font-weight      : 400;
+    color            : #FFFFFF !important;
+    background-color : #618afb;
+    box-shadow       : inset 0 -0.6em 0 -0.35em rgba(0, 0, 0, 0.3);
+    text-align       : center;
+    position         : relative;
+}
+
+.cbutton:active {
+    top : 0.1em;
+}
+
+@media all and (max-width : 30em) {
+    .cbutton {
+        display : block;
+        margin  : 0.4em auto;
+    }
+}
+
+.c-level-task-menu {
+    position   : -webkit-sticky;
+    position   : sticky;
+    display: flex;
+    justify-content: space-between;
+    top        : 0;
+    z-index    : 25;
+    height     : 55px;
+    padding    : 0 1rem;
+    font-size  : 1.125rem;
+    color      : #fff;
+    background : linear-gradient(90deg, #F2F4D1, #89A3B2);
+    box-shadow : 0 0 9px 0 rgba(0, 0, 0, 0.6);
+
+}
+
+.c-level-task-menu .logo-wrap {
+    float           : left;
+    display         : flex;
+    align-items     : center;
+    justify-content : flex-start;
+    height          : 100%;
+}
+.c-level-task-menu .logo-wrap .logo{
+    padding-right: 5px;
+}
+
+.c-level-task-menu .menu {
+    float           : right;
+    display         : flex;
+    align-items     : center;
+    justify-content : flex-end;
+    height          : 100%;
+    flex-direction  : row;
+}
+
+.c-level-task-menu .menu a {
+    color     : #fff;
+    padding   : 0 10px;
+    font-size : 14px;
+}
+
+.searchInput {
+    outline          : none;
+    height           : 34px;
+    background-color : #618afb;
+    box-shadow       : inset 0 -0.6em 0 -0.35em rgba(0, 0, 0, 0.3);
+    border           : none;
+    color            : #fff;
+    text-indent      : 5px;
+    min-width        : 230px;
+    border-radius    : 0.15em;
+}
+
+.searchInput::placeholder{
+    color : #fff;
+}
+
+.c-full {
+    background      : linear-gradient(90deg, #F2F4D1, #89A3B2);
+    height          : calc(100vh - 55px);
+    border-top      : 1px solid #5e9c76;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    flex-direction  : row;
+}
+
+.fit-content {
+    height : fit-content;
+}
+
+.c-full .block {
+    width           : 250px;
+    padding         : 20px;
+    height          : 140px;
+    border          : 1px solid;
+    margin          : 30px;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    flex-direction  : column;
+    border-radius   : 10px;
+    background      : linear-gradient(-30deg, #BDF2D5, #7AD9F5);
+    font-size       : 30px;
+    box-shadow      : 5px 5px 5px;
+}
+
+.c-full .block.medium-block {
+    width : 330px;
+}
+
+.c-full .block.full-block {
+    width : 330px;
+}
+
+.c-full .block:hover {
+    box-shadow : 3px 3px 3px;
+}
+
+.font-normalize {
+    font-size : 15px !important;
+}
+
+.text-left {
+    text-align : left !important;
+}
+
+.text-right {
+    text-align : right !important;
+}
+
+.text-center {
+    text-align : center !important;
+}
+
+
+.c-full .alert {
+    background  : #ff0000;
+    position    : relative;
+    padding     : 20px 35px;
+    font-size   : 18px;
+    color       : #fff;
+    text-indent : 35px;
+}
+
+.c-full .alert::before {
+    content         : '!';
+    margin          : 0;
+    position        : absolute;
+    left            : 0;
+    font-size       : 50px;
+    top             : 0;
+    background      : #fff;
+    color           : #000;
+    height          : 100%;
+    width           : 40px;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    flex-direction  : column;
+    text-indent     : 0;
+}
+
+.header {
+    width         : 100%;
+    left          : 0;
+    top           : 5%;
+    text-align    : left;
+    border-bottom : 1px #999 solid;
+}
+
+.student-table {
+    width : 100%;
+}
+
+table.student-table th {
+    background-color : #C6C6C6;
+    text-align       : left;
+    color            : white;
+    padding          : 7px 3px;
+    font-weight      : 700;
+    font-size        : 18px;
+    vertical-align   : middle;
+}
+
+table.student-table tr.odd {
+    text-align       : left;
+    padding          : 5px;
+    background-color : #F9F9F9;
+}
+
+table.student-table td {
+    text-align : left;
+    padding    : 5px;
+    position   : relative;
+}
+
+table.student-table td a {
+    color : #5e9c76;
+}
+
+
+a, a:visited {
+    text-decoration : none;
+    color           : #999;
+}
+
+.text-white, .text-white:visited {
+    color : #fff;
+}
+
+
+h1 {
+    font-size : 32px;
+    margin    : 16px 0 0 0;
+}
+
+
+.control {
+    font-size     : 18px;
+    position      : relative;
+    display       : block;
+    margin-bottom : 15px;
+    padding-left  : 30px;
+    cursor        : pointer;
+}
+
+.control input {
+    position : absolute;
+    z-index  : -1;
+    opacity  : 0;
+}
+
+.control__indicator {
+    position   : absolute;
+    top        : 2px;
+    left       : 0;
+    width      : 20px;
+    height     : 20px;
+    background : #e6e6e6;
+}
+
+.control--radio .control__indicator {
+    border-radius : 50%;
+}
+
+.control:hover input ~ .control__indicator,
+.control input:focus ~ .control__indicator {
+    background : #ccc;
+}
+
+.control input:checked ~ .control__indicator {
+    background : #2aa1c0;
+}
+
+.control:hover input:not([disabled]):checked ~ .control__indicator,
+.control input:checked:focus ~ .control__indicator {
+    background : #0e647d;
+}
+
+.control input:disabled ~ .control__indicator {
+    pointer-events : none;
+    opacity        : .6;
+    background     : #e6e6e6;
+}
+
+.control__indicator:after {
+    position : absolute;
+    display  : none;
+    content  : '';
+}
+
+.control input:checked ~ .control__indicator:after {
+    display : block;
+}
+
+.control--checkbox .control__indicator:after {
+    top          : 3px;
+    left         : 8px;
+    width        : 5px;
+    height       : 11px;
+    transform    : rotate(45deg);
+    border       : solid #fff;
+    border-width : 0 2px 2px 0;
+}
+
+.control--checkbox input:disabled ~ .control__indicator:after {
+    border-color : #7b7b7b;
+}
+
+.control--radio .control__indicator:after {
+    top           : 7px;
+    left          : 7px;
+    width         : 6px;
+    height        : 6px;
+    border-radius : 50%;
+    background    : #fff;
+}
+
+.control--radio input:disabled ~ .control__indicator:after {
+    background : #7b7b7b;
+}
